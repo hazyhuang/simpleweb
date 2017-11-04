@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/requirementMatrix.do" location="50,250" dimension="299,96" />
+  <StrutsActivity path="/documentApproval.do" location="450,255" dimension="302,96" />
+  <StrutsActivity path="/dHFReport.do" location="45,465" dimension="274,84" />
+  <StrutsActivity path="/dHFProdLineReport.do" location="50,850" dimension="326,104" />
+  <StrutsActivity path="/capaAnalysize.do" location="750,405" dimension="298,84" />
+  <StrutsActivity path="/dMRReport.do" location="50,650" dimension="274,84" />
+  <StrutsActivity path="error;6" location="50,50" dimension="175,81" />
+  <StrutsActivity path="successful;6" location="350,50" dimension="200,81" />
+  <StrutsActivity path="/default/requirementMatrix.jsp" location="90,165" dimension="193,51" />
+  <StrutsActivity path="/default/documentApproval.jsp" location="510,165" dimension="198,51" />
+  <StrutsActivity path="/default/DHFReport.jsp" location="375,465" dimension="172,48" />
+  <StrutsActivity path="/default/DHFReportInputForPModel.jsp" location="45,390" dimension="256,48" />
+  <StrutsActivity path="/default/DHFReportProdLine.jsp" location="950,250" dimension="217,53" />
+  <StrutsActivity path="/default/DHFReportInputForProdline.jsp" location="650,650" dimension="263,53" />
+  <StrutsActivity path="/default/CAPAOnline.jsp" location="810,540" dimension="178,48" />
+  <StrutsActivity path="/default/DMRReport.jsp" location="420,675" dimension="172,48" />
+  <StrutsActivity path="/default/ProcessErrors.jsp" location="650,50" dimension="165,51" />
+  <StrutsActivity path="/default/ProcessSuccessful.jsp" location="950,50" dimension="190,51" />
+  <StrutsTransition id="/dHFProdLineReport.do,gotoreport,/default/DHFReportProdLine.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="376,932" />
+      <AbsolutePoint location="1063,932" />
+      <AbsolutePoint location="1063,303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/default/DHFReportInputForPModel.jsp,null,/dHFReport.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="182,438" />
+      <AbsolutePoint location="182,465" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/default/requirementMatrix.jsp,null,/requirementMatrix.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="199,216" />
+      <AbsolutePoint location="199,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/default/DHFReportInputForProdline.jsp,null,/dHFProdLineReport.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="781,703" />
+      <AbsolutePoint location="781,902" />
+      <AbsolutePoint location="376,902" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="error;6,null,/default/ProcessErrors.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="137,50" />
+      <AbsolutePoint location="137,-25" />
+      <AbsolutePoint location="732,-25" />
+      <AbsolutePoint location="732,50" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/default/documentApproval.jsp,null,/documentApproval.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="601,216" />
+      <AbsolutePoint location="601,255" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/default/CAPAOnline.jsp,null,/capaAnalysize.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="899,540" />
+      <AbsolutePoint location="899,489" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="successful;6,null,/default/ProcessSuccessful.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="550,116" />
+      <AbsolutePoint location="1045,116" />
+      <AbsolutePoint location="1045,101" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/dHFReport.do,gotoreport,/default/DHFReport.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="319,489" />
+      <AbsolutePoint location="375,489" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/default/DMRReport.jsp,null,/dMRReport.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="420,692" />
+      <AbsolutePoint location="324,692" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
