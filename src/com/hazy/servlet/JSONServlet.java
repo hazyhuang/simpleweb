@@ -1,4 +1,5 @@
-package com.edan.servlet;
+
+package com.hazy.servlet;
 
 import java.io.*;
 import javax.servlet.ServletException;
@@ -7,6 +8,11 @@ import javax.servlet.http.HttpServletResponse;
 
 
 public class JSONServlet extends javax.servlet.http.HttpServlet implements javax.servlet.Servlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public JSONServlet() {
 		super();
 	}
